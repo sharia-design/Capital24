@@ -1,0 +1,103 @@
+* { box-sizing: border-box; }
+:root {
+	--dark: #282d33;
+	--light: #878d95;
+	--blue: #3e4cff;
+	--yellow: #FAC92A;
+	--bg-color: #F5F4FA;
+}
+
+@font-face {
+	font-family: 'futura';
+	src: url('../fonts/Futura Book font.eot');
+	src: local('☺'), url('../fonts/Futura Book font.woff') format('woff'), url('../fonts/Futura Book font.ttf') format('truetype'), url('../fonts/Futura Book font.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'museo';
+	src: url('../fonts/Museo 900.eot');
+	src: local('☺'), url('../fonts/Museo 900.woff') format('woff'), url('../fonts/Museo 900.ttf') format('truetype'), url('../fonts/Museo 900.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+a { text-decoration: none; }
+.none { display: none !important; }
+.block { display: block !important; }
+body {
+	font-family: futura, museo;
+	background: var(--bg-color);
+}
+.wrap {
+	margin: 0 auto;
+	padding: 0;
+	width: 90%;
+	overflow: hidden;
+}
+h1, h2 { font-family: museo; }
+
+.fx-blue {
+	position: absolute;
+	top: 0;
+	left: -150px;
+	width: 552px;
+	height: 218px;
+	background: url(../img/fx-blue.png) no-repeat;
+	z-index: -1;
+}
+.fx-yellow {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 374px;
+	height: 1075px;
+	background: url(../img/fx-yellow.png) no-repeat;
+	z-index: -1;
+}
+.header {
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	width: 100%;
+}
+.logo {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+.nav {
+	margin: 0 0 0 320px;
+	padding: 0;
+	display: inline-block;
+}
+.nav a {
+	margin: 0 15px;
+	padding: 0 0 5px 0;
+	display: inline-block;
+	font-size: 18px;
+	color: var(--dark);
+	font-weight: lighter;
+	position: relative;
+	transition: .3s ease-in-out;
+}
+.nav a:after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -5px;
+	width: 0%;
+	background: var(--blue);
+	height: 2px;
+	transition: .3s ease-in-out;
+}
+.nav a:hover:after { width: 100%; }
+ .nav a:hover {
+	color: var(--blue);
+} 
+.nav a.active {
+	color: var(--blue);
+}
+.nav a.active:after { width: 100%; }
