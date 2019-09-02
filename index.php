@@ -15,21 +15,25 @@
         <link rel="stylesheet" href="css/app.css">
     </head>
     <body>
-    	<div class="fx-blue"></div>
-    	<div class="fx-yellow"></div>
+        <section class="intro">
+            
+            <div class="fx-blue"></div>
+            <div class="fx-yellow"></div>
+            <img src="img/illust.svg" class="illust" alt="Illustration">
 
-    	<div class="wrap">
-	    	<header class="header">
-		    	<img class="logo" src="img/logo-white.png" alt="Logo" height="52">
-		    	<nav class="nav">
-		    		<a href="#Intro">Intro</a>
-		    		<a href="#">How</a>
-		    		<a href="#" class="active">About</a>
-		    		<a href="#">Contact</a>
-		    	</nav>
-		    	<div class="header-btn">Sign Up</div>
-	    	</header><!-- /header -->
-    	</div>
+            <div class="wrap">
+                <header class="header">
+                    <img class="logo" src="img/logo-white.png" alt="Logo" height="52">
+                    <nav class="nav">
+                        <a href="#Intro">Intro</a>
+                        <a href="#">How</a>
+                        <a href="#" class="active">About</a>
+                        <a href="#">Contact</a>
+                    </nav>
+                    <div class="header-btn">Sign Up</div>
+                </header><!-- /header -->
+            </div>
+        </section>
 
         <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
