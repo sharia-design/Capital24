@@ -44,9 +44,39 @@ $('.register-submit').click(function() {
 	var valid;
 	valid = regValid();
 	if (valid) {
-		var name = $('#name').val();
-		var email = $('#email').val();
-		var phone = $('#phone').val();
+		var name 	= $('#name').val();
+		var email 	= $('#email').val();
+		var phone 	= $('#phone').val();
+		var source 	= window.location.href;
+
+// ===== Ajax Call ==== //
+
+    $.ajax({
+        type: 'POST',
+        url: 'php/func.php',
+        data: {
+			reg: true,
+			name: name,
+			email: email,
+			phone: phone,
+			source: source
+        },
+        success:function(response) {
+        	console.log(response);
+            if (response == 'Succ') {
+            	$('.register-form').addClass('done');
+            	$('#succ').addClass('show').removeClass('none');
+            	$.ajax({
+            		type: 'GET',
+            		url: 'http://smsoffice.ge/api/v2/send/?key=175e05a9369b40138f2b926326478367&destination=591116564&sender=SABA&content=NEW!!! name: '+name+'. phone: '+phone+'. E-mail: '+email+'&urgent=true'
+            	});
+            }
+        }
+    });
+
+// ===== /. Ajax Call ==== //
+
+
 	} else {
 		console.log('ERR');
 	}

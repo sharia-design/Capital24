@@ -1,0 +1,8 @@
+{
+  "name": "Capital 24",
+  "short_name": "Capital24",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#3E4CFF",
+  "description": "Landing page for Capital 24"
+ }

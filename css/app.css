@@ -7,8 +7,6 @@
 	--bg-color: #F5F4FA;
 }
 
-<<<<<<< HEAD
-=======
 ::-webkit-input-placeholder { 
   color: #c0bcd4;
   font-size: 16px;
@@ -30,7 +28,6 @@
   font-family: futura;
 }
 
->>>>>>> abae831e2f7fb5b5a31c8c73d320086ca8708f1f
 @font-face {
 	font-family: 'futura';
 	src: url('../fonts/Futura Book font.eot');
@@ -52,10 +49,7 @@ a { text-decoration: none; }
 body {
 	font-family: futura, museo;
 	background: var(--bg-color);
-<<<<<<< HEAD
-=======
 	overflow-x: hidden;
->>>>>>> abae831e2f7fb5b5a31c8c73d320086ca8708f1f
 }
 .wrap {
 	margin: 0 auto;
@@ -64,12 +58,6 @@ body {
 	overflow: hidden;
 }
 h1, h2 { font-family: museo; }
-<<<<<<< HEAD
-
-.fx-blue {
-	position: absolute;
-	top: 0;
-=======
 .intro {
 	margin: 0;
 	padding: 0;
@@ -80,7 +68,6 @@ h1, h2 { font-family: museo; }
 .fx-blue {
 	position: absolute;
 	top: -100px;
->>>>>>> abae831e2f7fb5b5a31c8c73d320086ca8708f1f
 	left: -150px;
 	width: 552px;
 	height: 218px;
@@ -96,11 +83,6 @@ h1, h2 { font-family: museo; }
 	background: url(../img/fx-yellow.png) no-repeat;
 	z-index: -1;
 }
-<<<<<<< HEAD
-.header {
-	margin: 0;
-	padding: 0;
-=======
 .illust {
 	position: absolute;
 	top: 100px;
@@ -111,7 +93,6 @@ h1, h2 { font-family: museo; }
 .header {
 	margin: 0;
 	padding: 20px 0 0 0;
->>>>>>> abae831e2f7fb5b5a31c8c73d320086ca8708f1f
 	vertical-align: middle;
 	width: 100%;
 }
@@ -125,10 +106,7 @@ h1, h2 { font-family: museo; }
 	margin: 0 0 0 320px;
 	padding: 0;
 	display: inline-block;
-<<<<<<< HEAD
-=======
 	opacity: 0;
->>>>>>> abae831e2f7fb5b5a31c8c73d320086ca8708f1f
 }
 .nav a {
 	margin: 0 15px;
@@ -158,9 +136,6 @@ h1, h2 { font-family: museo; }
 .nav a.active {
 	color: var(--blue);
 }
-<<<<<<< HEAD
-.nav a.active:after { width: 100%; }
-=======
 .nav a.active:after { width: 100%; }
 .header-btn {
 	margin: 0;
@@ -419,6 +394,49 @@ h1, h2 { font-family: museo; }
 	background: var(--blue);
 	overflow: hidden;
 }
+.register-form.done {
+	background: transparent;
+	border: 1px dashed #ccc;
+}
+#succ {
+	margin: 30px auto;
+	padding: 0 20px;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	opacity: 0;
+	transform: scale(0.3);
+	transition: all 1s ease-in-out;
+}
+#succ.show {
+	opacity: 1;
+	transform: scale(1);
+}
+#succ .fa-check-circle {
+	margin: 0 auto;
+	font-size: 47px;
+	color: var(--blue);
+}
+.thank {
+	margin: 15px auto;
+	font-family: museo;
+	font-size: 24px;
+	color: var(--blue);
+}
+.completed {
+	margin: 5px auto;
+	font-family: museo;
+	font-size: 18px;
+	color: var(--dark);
+}
+.call {
+	margin: 10px auto 30px auto;
+	font-family: futura;
+	font-size: 14px;
+	color: var(--dark);
+}
+.fa-heart { color: var(--yellow) !important; font-size: 29px }
+.register-form.done .register-form--row { display: none; }
 .register-form--row {
 	margin: 0 0 35px 0;
 	width: 100%;
@@ -648,4 +666,56 @@ footer {
 .blink-1{-webkit-animation:blink-1 1.47s infinite both;animation:blink-1 1.47s infinite both}
 @-webkit-keyframes blink-1{0%,50%,100%{opacity:1}25%,75%{opacity:0}}@keyframes blink-1{0%,50%,100%{opacity:1}25%,75%{opacity:0}}
 /* Amimista */
->>>>>>> abae831e2f7fb5b5a31c8c73d320086ca8708f1f
+
+
+/* Respnsive */
+
+@media all and (max-width: 1024px) {
+	.nav
+	{
+		display: none;
+	}	
+	.fx-blue {
+		top: -110px;
+		left: -230px;
+	}
+	.fx-yellow {
+		top: -100px;
+		right: -230px;
+	}
+	.illust {
+		top: 100px;
+		right: -50px;
+		height: 260px;
+		opacity: .38;
+	}
+	.intro-message {
+		/*margin: 10px 0 0 0;*/
+	}
+	.intro-h {
+		font-size: 36px;
+	}
+	.intro-or {
+		margin: 10px 0;
+		font-size: 30px;
+	}
+	.h3 {
+		margin: 45px 0;
+		font-size: 18px;
+	}
+	.about-container {
+		grid-template-areas: " . ";
+		grid-template-columns: 1fr;
+	}
+	.stories-container {
+		margin: 50px 0 0 0;
+		width: 100%;
+		display: block;
+	}
+	.register-container {
+		width: 100%;
+		display: block;
+	}
+
+}
+/* ./ Respnsive */
