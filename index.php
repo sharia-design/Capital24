@@ -9,7 +9,7 @@ include 'php/func.php';
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Capital 24 | Make Money</title>
+        <title>[DEV] Capital 24 | Make Money</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
