@@ -85,6 +85,15 @@ include 'php/func.php';
                     <h2 class="register-title">Get Start</h2>
                     <p class="register-desc">Fill up this simple form<br/> and start making money easly</p>
                     <div class="register-form">
+                        <!-- Succ -->
+                        <div id="succ" class="none">
+                            <i class="fa fa-check-circle"></i>
+                            <h3 class="thank">Thank You!</h3>
+                            <div class="completed">You successfully completed registration.</div>
+                            <p class="call">Our Multi-Language Support contact you soon.</p>
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <!-- ./ Succ -->
                         <div class="register-form--row">
                             <label class="register-label" for="name">Full Name:</label>
                             <input class="register-input" id="name" type="text" placeholder="Mick Jager">
